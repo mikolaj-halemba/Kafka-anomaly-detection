@@ -1,0 +1,5 @@
+{
+    "KAFKA_BROKER": "broker:9092",
+    "ISOLATION_LEVEL": "read_committed",
+    "AUTO_OFFSET_RESET": "latest"
+}

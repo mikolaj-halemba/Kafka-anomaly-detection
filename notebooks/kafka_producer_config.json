@@ -1,0 +1,9 @@
+{
+    "KAFKA_BROKER": "broker:9092",
+    "BATCH_SIZE": 64000,
+    "LINGER_MS": 10,
+    "ACKS": "all",
+    "RETRIES": 5,
+    "DELIVERY_TIMEOUT": 1000,
+    "NUM_PARTITIONS": 3
+}
