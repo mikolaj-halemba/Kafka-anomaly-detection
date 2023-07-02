@@ -15,13 +15,15 @@
 - confluent_kafka
 
 <h2> Instructions: </h2>
-- Navigate to the folder containing the Docker compose file: ```cd /path/to/docker-compose/directory```
-- Run Docker compose up: ```docker-compose up```
+
+- Navigate to the folder containing the Docker compose file: `cd /path/to/docker-compose/directory`
+- Run Docker compose up: `docker-compose up`
 - Create new Kafka topics for transactions and anomaly detection:
-  ```docker exec broker kafka-topics --bootstrap-server broker:9092 --create --topic transactions```
-  ```docker exec broker kafka-topics --bootstrap-server broker:9092 --create --topic anomaly```
-- Run the Python Kafka producer script: ```python run_producer.py transactions```
-- Run the anomaly detection script: ```python anomaly_detection.py 3 transactions transactions anomaly```
+  `docker exec broker kafka-topics --bootstrap-server broker:9092 --create --topic transactions`
+  `docker exec broker kafka-topics --bootstrap-server broker:9092 --create --topic anomaly`
+- Run the Python Kafka producer script: `python run_producer.py transactions`
+- Run the anomaly detection script: `python anomaly_detection.py 3 transactions transactions anomaly`
+
 
 	
 	
